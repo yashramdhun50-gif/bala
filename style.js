@@ -7,8 +7,9 @@ btn.addEventListener("mouseover", () => {
     btn.style.left = x + "px";
     btn.style.top = y + "px";
 
-    // After 5 tries, show picture
-    if (fails >= 5) {
-        document.getElementById("funnyPic").style.display = "block";
+    if (fails === 7) {
+        const pic = document.getElementById("funnyPic");
+        pic.style.display = "block";
+        pic.style.animation = "shake 0.2s infinite";
     }
 });
